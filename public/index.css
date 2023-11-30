@@ -1,36 +1,50 @@
-/* Add Responsive Media Queries */
 @media screen and (max-width: 768px) {
   .chatbot-container {
       width: 100%;
       height: 100vh; /* Take full height of the viewport */
       min-height: 100vh;
-      border-radius: 0; /* Optional: remove border radius for full-screen look */
+      border-radius: 0; /* Full-screen look */
+      padding: 0.5em; /* Adjust padding for smaller screens */
   }
 
   main {
       height: 100vh;
+      background-size: cover; /* Ensure background covers the entire viewport */
   }
-}
 
-@media screen and (max-width: 768px) {
   .speech {
-      font-size: 0.90em; /* Adjust as needed */
+      font-size: 0.90em; /* Increase font size for better readability */
+      padding: 0.8em; /* Adjust padding for speech bubbles */
   }
-  /* Add other font size adjustments as needed */
-}
 
-@media screen and (max-width: 768px) {
   .send-btn-icon {
-      width: 30px; /* Adjust as needed */
+      width: 40px; /* Increase icon size for easier interaction */
   }
+
   input[type="text"], button {
-      padding: 1.5em; /* Larger padding for touch friendliness */
+      padding: 1.2em; /* Increase padding for better touch interaction */
   }
-  /* Adjust other elements as necessary */
+
+  .chatbot-conversation-container {
+      max-height: 80vh; /* Adjust height to prevent overflow */
+      padding-right: 5px; /* Add padding to prevent text touching the edge */
+  }
+
+  .chatbot-conversation-container::-webkit-scrollbar {
+      width: 12px; /* Wider scrollbar for easier touch interaction */
+  }
+
+  .sub-heading {
+      font-size: 14px; /* Increase sub-heading font size for readability */
+  }
+
+  .loader__dot {
+      width: 12px; /* Increase dot size for visibility */
+      height: 12px;
+  }
 }
 
-
-
+/* Rest of your existing CSS */
 :root {
     --border-rad-lg: 15px;
     --light-text: #fefefe;
@@ -162,6 +176,7 @@ button {
     text-transform: uppercase;
     margin: 0;
 }
+
 /* Add this loader CSS to your existing CSS file */
 .loader {
     position: relative;
@@ -222,16 +237,3 @@ button {
       opacity: 0;
     }
   }
-  
-
-
-/* Touch-Friendly Adjustments */
-input[type="text"], button {
-  padding: 1.2em; /* Increase touch area */
-}
-
-
-/* Ensure Scrollbar is Touch-Friendly */
-.chatbot-conversation-container::-webkit-scrollbar {
-  width: 10px; /* wider scrollbar for touch interaction */
-}
