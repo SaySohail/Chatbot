@@ -15,16 +15,18 @@ his project develops a web-based chatbot interface that leverages OpenAI's power
 
 
 
-## Architecture Components
+## Design:
 
 <div align="center">
-  <img src="public/images/informationGathering.png" alt="Data Embedding" >
   <h3 align="center">Data Embedding</h3>
+  <img src="public/images/informationGathering.png" alt="Data Embedding" >
+  
 </div>
 
 <div align="center">
+<h3 align="center">Chatbot Design</h3>
   <img src="public/images/architecture.png" alt="Chatbot Design" >
-  <h3 align="center">Chatbot Design</h3>
+  
 </div>
 
 ### Information Source
