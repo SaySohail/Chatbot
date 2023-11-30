@@ -1,3 +1,36 @@
+/* Add Responsive Media Queries */
+@media screen and (max-width: 768px) {
+  .chatbot-container {
+      width: 100%;
+      height: 100vh; /* Take full height of the viewport */
+      min-height: 100vh;
+      border-radius: 0; /* Optional: remove border radius for full-screen look */
+  }
+
+  main {
+      height: 100vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .speech {
+      font-size: 0.90em; /* Adjust as needed */
+  }
+  /* Add other font size adjustments as needed */
+}
+
+@media screen and (max-width: 768px) {
+  .send-btn-icon {
+      width: 30px; /* Adjust as needed */
+  }
+  input[type="text"], button {
+      padding: 1.5em; /* Larger padding for touch friendliness */
+  }
+  /* Adjust other elements as necessary */
+}
+
+
+
 :root {
     --border-rad-lg: 15px;
     --light-text: #fefefe;
@@ -72,7 +105,7 @@ main {
     color: var(--light-text);
     min-width: 90%;
     border-radius: var(--border-rad-lg); 
-    font-size: 1.07em;
+    font-size: 0.90em;
 }
 
 .speech:first-child {
@@ -190,3 +223,15 @@ button {
     }
   }
   
+
+
+/* Touch-Friendly Adjustments */
+input[type="text"], button {
+  padding: 1.2em; /* Increase touch area */
+}
+
+
+/* Ensure Scrollbar is Touch-Friendly */
+.chatbot-conversation-container::-webkit-scrollbar {
+  width: 10px; /* wider scrollbar for touch interaction */
+}
