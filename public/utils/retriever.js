@@ -17,6 +17,6 @@ const vectorStore = new SupabaseVectorStore(embeddings, {
     queryName: 'match_documents'
 })
 
-const retriever = vectorStore.asRetriever()
+const retriever = vectorStore.asRetriever(10)
 
 export { retriever }
