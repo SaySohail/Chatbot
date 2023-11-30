@@ -105,7 +105,7 @@ app.post('/process-question', async (req, res) => {
 });
 
 // Set the port
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 3000;
 
 // Start the server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
