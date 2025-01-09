@@ -3,7 +3,7 @@
 
 
 ## Description
-his project develops a web-based chatbot interface that leverages OpenAI's powerful language models. It is designed to process user queries, interact in a conversational manner, and provide informative and engaging responses. The backend is built on Node.js, using Express for server-side logic and handling HTTP requests. The frontend employs basic HTML, CSS, and JavaScript to capture user input and display chatbot responses dynamically.
+This project develops a web-based chatbot interface that leverages OpenAI's powerful language models. It is designed to process user queries, interact in a conversational manner, and provide informative and engaging responses. The backend is built on Node.js, using Express for server-side logic and handling HTTP requests. The frontend employs basic HTML, CSS, and JavaScript to capture user input and display chatbot responses dynamically.
 ## Features
 - **OpenAI Language Model Integration:**: The chatbot uses OpenAI's advanced language models for natural language processing and generating responses. This allows it to understand and respond to a wide range of user queries effectively.
 - **Web-Based Interface**: The chatbot is accessible through a web interface, making it easy for users to interact with it from any device with a web browser.
